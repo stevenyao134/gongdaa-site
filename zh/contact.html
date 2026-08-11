@@ -49,7 +49,7 @@
       <p>告诉我们您的花色、规格与包装需求，销售团队快速回复。</p>
     </div>
     <div class="grid grid-2" style="gap:40px;align-items:start">
-      <form class="card" action="mailto:steven@sundecor.cn" method="post" enctype="text/plain">
+      <form class="card" id="inquiry-form">
         <div class="form-grid">
           <div class="field"><label>姓名 *</label><input type="text" name="name" required /></div>
           <div class="field"><label>公司 *</label><input type="text" name="company" required /></div>
@@ -81,11 +81,43 @@
   </div>
 </section>
 
+<div id="toast" class="toast"></div>
 <footer class="site-footer">
   <div class="container footer-bottom" style="border:0;margin-top:0">
     <span>© 2026 GONGDA. 版权所有.</span>
     <span>装饰 PVC 膜 · PVC 封边条 制造商</span>
   </div>
 </footer>
+<style>
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#25D366;color:#fff;padding:12px 24px;border-radius:8px;font-size:15px;z-index:9999;opacity:0;pointer-events:none;transition:opacity .3s;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.toast.show{opacity:1}
+.toast.error{background:#ef4444}
+</style>
+<script>
+(function(){
+  var f=document.getElementById('inquiry-form');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var msg='*来自 GONGDA 官网的新询盘*%0A%0A';
+    msg+='姓名: '+encodeURIComponent(f.name.value)+'%0A';
+    msg+='公司: '+encodeURIComponent(f.company.value)+'%0A';
+    msg+='邮箱: '+encodeURIComponent(f.email.value)+'%0A';
+    msg+='电话: '+encodeURIComponent(f.phone.value||'—')+'%0A';
+    msg+='产品意向: '+encodeURIComponent(f.product.value)+'%0A';
+    msg+='留言: '+encodeURIComponent(f.message.value)+'%0A%0A';
+    msg+='--- 通过 gongdaa.com 发送 ---';
+    var t=document.getElementById('toast');
+    var b=f.querySelector('button[type=submit]');
+    var o=b.textContent;
+    b.textContent='正在打开 WhatsApp...';
+    b.disabled=true;
+    t.className='toast show';
+    t.textContent='正在打开 WhatsApp — 发送消息即可完成询盘 ✓';
+    window.open('https://wa.me/8613532762231?text='+msg,'_blank');
+    setTimeout(function(){b.textContent=o;b.disabled=false;t.className='toast'},3000);
+  });
+})();
+</script>
 </body>
 </html>

@@ -49,7 +49,7 @@
       <p>Tell us your designs, sizes and packaging needs — our sales team replies fast.</p>
     </div>
     <div class="grid grid-2" style="gap:40px;align-items:start">
-      <form class="card" action="mailto:steven@sundecor.cn" method="post" enctype="text/plain">
+      <form class="card" id="inquiry-form">
         <div class="form-grid">
           <div class="field"><label>Name *</label><input type="text" name="name" required /></div>
           <div class="field"><label>Company *</label><input type="text" name="company" required /></div>
@@ -81,11 +81,43 @@
   </div>
 </section>
 
+<div id="toast" class="toast"></div>
 <footer class="site-footer">
   <div class="container footer-bottom" style="border:0;margin-top:0">
     <span>© 2026 GONGDA. All rights reserved.</span>
     <span>Decorative PVC Film · PVC Edge Banding Manufacturer</span>
   </div>
 </footer>
+<style>
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#25D366;color:#fff;padding:12px 24px;border-radius:8px;font-size:15px;z-index:9999;opacity:0;pointer-events:none;transition:opacity .3s;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.toast.show{opacity:1}
+.toast.error{background:#ef4444}
+</style>
+<script>
+(function(){
+  var f=document.getElementById('inquiry-form');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var msg='*New Inquiry from GONGDA Website*%0A%0A';
+    msg+='Name: '+encodeURIComponent(f.name.value)+'%0A';
+    msg+='Company: '+encodeURIComponent(f.company.value)+'%0A';
+    msg+='Email: '+encodeURIComponent(f.email.value)+'%0A';
+    msg+='Phone: '+encodeURIComponent(f.phone.value||'—')+'%0A';
+    msg+='Product: '+encodeURIComponent(f.product.value)+'%0A';
+    msg+='Message: '+encodeURIComponent(f.message.value)+'%0A%0A';
+    msg+='--- Sent via gongdaa.com ---';
+    var t=document.getElementById('toast');
+    var b=f.querySelector('button[type=submit]');
+    var o=b.textContent;
+    b.textContent='Opening WhatsApp...';
+    b.disabled=true;
+    t.className='toast show';
+    t.textContent='Opening WhatsApp — send the message to complete ✓';
+    window.open('https://wa.me/8613532762231?text='+msg,'_blank');
+    setTimeout(function(){b.textContent=o;b.disabled=false;t.className='toast'},3000);
+  });
+})();
+</script>
 </body>
 </html>
