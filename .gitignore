@@ -1,6 +1,9 @@
 # WorkBuddy project data
 .workbuddy/
 
+# Deploy build folder (auto-generated, not source)
+gongdaa-site-deploy/
+
 # Temporary files
 *.zip
 .DS_Store
