@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gongdaa.com/sitemap.xml
+Sitemap: https://gongdaa.com/sitemap.xml
