@@ -1,0 +1,11 @@
+# WorkBuddy project data
+.workbuddy/
+
+# Temporary files
+*.zip
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
