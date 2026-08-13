@@ -13,3 +13,8 @@ Thumbs.db
 .vscode/
 .idea/
 # Auto-deployment triggered
+
+# Legacy raster sources replaced by WebP (keep on disk only, not deployed via git)
+img/*.jpg
+img/*.png
+!img/og-default.jpg
