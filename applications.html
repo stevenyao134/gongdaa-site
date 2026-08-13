@@ -28,6 +28,19 @@
     gtag('js', new Date());
     gtag('config', 'G-YS20GQTPFM');
   </script>
+<script>
+/* GONGDA conversion tracking (GA4) */
+(function(){
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('a,button');if(!el)return;
+    var href=el.getAttribute('href')||'';
+    var txt=(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim().slice(0,80);
+    if(/^mailto:/i.test(href)){gtag('event','email_click',{event_category:'engagement',link_text:txt});return;}
+    if(/^tel:/i.test(href)){gtag('event','tel_click',{event_category:'engagement',link_text:txt});return;}
+    if(/\/contact\.html(\?|#|$)/.test(href)||/wa\.me\//i.test(href)){gtag('event','cta_click',{event_category:'engagement',link_text:txt,link_url:href});}
+  });
+})();
+</script>
 </head>
 <body>
 <header class="site-header">
