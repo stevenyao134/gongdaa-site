@@ -14,6 +14,12 @@ Thumbs.db
 .idea/
 # Auto-deployment triggered
 
+# Internal documentation / migration guides — reference only, not part of the site
+Cloudflare迁移指南.md
+Vercel上线指南.md
+上线指南.md
+SEO-Strategy.md
+
 # Legacy raster sources replaced by WebP (keep on disk only, not deployed via git)
 img/*.jpg
 img/*.png
