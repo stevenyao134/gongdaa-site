@@ -29,3 +29,5 @@ GSC手动请求索引-每日队列.md
 img/*.jpg
 img/*.png
 !img/og-default.jpg
+!img/og-contact.jpg
+!img/factory.webp
