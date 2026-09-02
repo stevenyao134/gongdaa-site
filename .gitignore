@@ -30,4 +30,11 @@ img/*.jpg
 img/*.png
 !img/og-default.jpg
 !img/og-contact.jpg
+!img/og-index.jpg
+!img/og-products.jpg
+!img/og-blog.jpg
+!img/og-applications.jpg
+!img/og-about.jpg
+!img/og-certifications.jpg
+!img/og-faq.jpg
 !img/factory.webp
