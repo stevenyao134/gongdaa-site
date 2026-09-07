@@ -1,0 +1,21 @@
+{
+  "name": "GONGDA - PVC Decorative Film Manufacturer",
+  "short_name": "GONGDA",
+  "description": "PVC decorative film manufacturer from Yiwu, China. Wood grain, marble, metallic finishes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "icons": [
+    {
+      "src": "/img/favicon.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
