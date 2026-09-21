@@ -11,6 +11,12 @@
       "src": "/img/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "/img/favicon-180.webp",
+      "sizes": "180x180",
+      "type": "image/webp",
+      "purpose": "any maskable"
     }
   ]
 }
