@@ -1,105 +1,71 @@
-# GSC 手动请求索引 · 每日队列
+# GSC 手动请求索引 · 队列
 
-> 53 个 URL 按优先级拆成 5 天，每天 10-11 个，适配 GSC 每日请求索引配额。  
-> 使用方法：每天复制当天分组 → 打开 GSC → URL Inspection → 逐个粘贴 → 点 "Request Indexing"。  
-> 每个 URL 约 10 秒，一天一组约 2 分钟。
+> **更新：2026-09-30。** 本文件只保留当前有效动作，历史队列已删除。
 
 ---
 
-## ⚠️ 前提：先完成 www 统一
+## ⚠️ 先纠正一个操作（09-29 截图发现的问题）
 
-确保以下已生效（否则提交的是错误版本）：
+「站点地图」提交框**只接受 sitemap 文件**（如 `sitemap.xml`），填 HTML 页面地址必然报
+「1 项错误」/「无法抓取」。如果站点地图表格里还有以 `.html` 结尾的条目：
 
-- [ ] `sitemap.xml` 已改为 `https://www.gongdaa.com/`
-- [ ] `robots.txt` 已改为 `https://www.gongdaa.com/sitemap.xml`
-- [ ] 所有 HTML 的 canonical / og:url 已改为 www 版本
-- [ ] 已 commit + push，GitHub Pages 部署完成
+1. 每条点右侧 **⋮ → 移除站点地图**
+2. 同一个框里改填 `sitemap.xml` → 提交 → 状态应显示「成功」、已发现的网页 ≈ 61
+
+单页索引请求走 **顶部搜索栏（网址检查）→ 请求编入索引**，不走站点地图框。
 
 ---
 
-## 📅 Day 1 — 核心页面（🔴 + 前 6 个 🟡）
+## 0. 站点地图（最省力，覆盖全站 61 个 URL）
+
+GSC → 站点地图 → `sitemap.xml` → 提交。
+
+sitemap 与线上已逐字节一致（61 条 URL，全含 lastmod），Google 会按 lastmod 自动发现变更。
+这一步不占配额，先做完再考虑手动请求。
+
+---
+
+## 📅 批次 1 — 8 个（2026-09-29 起，未做完就继续做）
+
+每个 URL：顶部搜索栏粘贴 → 回车 → 右上「请求编入索引」→ 等转完 → 下一个。
 
 ```
-https://www.gongdaa.com/
-https://www.gongdaa.com/products.html
-https://www.gongdaa.com/products/decorative-pvc-film.html
-https://www.gongdaa.com/products/pvc-edge-banding.html
-https://www.gongdaa.com/products/wood-grain-pvc-film.html
-https://www.gongdaa.com/products/marble-metallic-pvc-film.html
-https://www.gongdaa.com/products/pvc-self-adhesive-film.html
-https://www.gongdaa.com/products/pvc-membrane-foil.html
-https://www.gongdaa.com/products/soft-touch-matt-pvc-film.html
-https://www.gongdaa.com/applications.html
-```
-
-## 📅 Day 2 — 高价值页面（🟡 剩余 + 应用页）
-
-```
-https://www.gongdaa.com/contact.html
-https://www.gongdaa.com/blog.html
-https://www.gongdaa.com/blog/decorative-surface-trends-2026.html
-https://www.gongdaa.com/zh/index.html
-https://www.gongdaa.com/zh/products.html
-https://www.gongdaa.com/applications/kitchen-cabinets.html
-https://www.gongdaa.com/applications/wardrobes-closets.html
-https://www.gongdaa.com/applications/doors-panels.html
-https://www.gongdaa.com/applications/wall-panels.html
-https://www.gongdaa.com/applications/office-furniture.html
-```
-
-## 📅 Day 3 — 英文博客与支持页（🟢）
-
-```
-https://www.gongdaa.com/applications/retail-hospitality.html
-https://www.gongdaa.com/about.html
+https://www.gongdaa.com/blog/pvc-film-market-outlook-2026-2030.html
+https://www.gongdaa.com/blog/how-to-vet-a-pvc-film-supplier.html
+https://www.gongdaa.com/blog/pvc-film-sustainability-reach-formaldehyde.html
+https://www.gongdaa.com/blog/shipping-pvc-film-from-china-moq-incoterms.html
+https://www.gongdaa.com/blog/private-label-pvc-film-distributors.html
 https://www.gongdaa.com/certifications.html
-https://www.gongdaa.com/faq.html
-https://www.gongdaa.com/blog/wood-grain-vs-marble-pvc-film.html
-https://www.gongdaa.com/blog/pvc-edge-banding-thickness-guide.html
-https://www.gongdaa.com/blog/water-based-vs-oil-based-pvc-ink.html
-https://www.gongdaa.com/blog/how-to-apply-pvc-film-vacuum-pressing.html
-https://www.gongdaa.com/blog/pvc-edge-banding-vs-abs.html
-https://www.gongdaa.com/blog/what-is-soft-touch-pvc-film.html
-https://www.gongdaa.com/blog/soft-touch-vs-glossy-vs-matte-pvc-film.html
+https://www.gongdaa.com/blog.html
+https://www.gongdaa.com/blog/the-ultimate-pvc-film-buyers-guide.html
 ```
 
-## 📅 Day 4 — 英文博客（🟢 续）
+| URL | 为什么需要 | 内容量 |
+|---|---|---|
+| 5 篇新博客 | 全新 URL，之前不存在，从未被抓取 | 983–1276 词 |
+| `certifications.html` | 新增 Guides & Insights 卡片区，lastmod 09-18 → 09-29 | 合规枢纽页 |
+| `blog.html` | 卡片 14 → 20，ItemList numberOfItems 15 → 20，meta 描述重写 | 博客索引 |
+| `the-ultimate-pvc-film-buyers-guide.html` | 页面早已存在，但 blog.html 一直没有它的卡片，本轮才补上入口 | 询盘转化主力文 |
 
-```
-https://www.gongdaa.com/blog/soft-touch-pvc-film-applications.html
-https://www.gongdaa.com/blog/how-soft-touch-pvc-film-is-made.html
-https://www.gongdaa.com/blog/soft-touch-pvc-film-durability-maintenance.html
-https://www.gongdaa.com/blog/pvc-film-kitchen-cabinets-guide.html
-https://www.gongdaa.com/blog/pvc-film-vs-veneer-vs-laminate.html
-https://www.gongdaa.com/blog/customizing-pvc-decorative-film.html
-https://www.gongdaa.com/zh/products/decorative-pvc-film.html
-https://www.gongdaa.com/zh/products/soft-touch-matt-pvc-film.html
-https://www.gongdaa.com/zh/products/pvc-edge-banding.html
-https://www.gongdaa.com/zh/products/wood-grain-pvc-film.html
-https://www.gongdaa.com/zh/products/marble-metallic-pvc-film.html
-```
-
-## 📅 Day 5 — 中文页面（🟢 续，收尾）
-
-```
-https://www.gongdaa.com/zh/products/pvc-membrane-foil.html
-https://www.gongdaa.com/zh/products/pvc-self-adhesive-film.html
-https://www.gongdaa.com/zh/applications.html
-https://www.gongdaa.com/zh/applications/kitchen-cabinets.html
-https://www.gongdaa.com/zh/applications/wardrobes-closets.html
-https://www.gongdaa.com/zh/applications/doors-panels.html
-https://www.gongdaa.com/zh/applications/wall-panels.html
-https://www.gongdaa.com/zh/applications/office-furniture.html
-https://www.gongdaa.com/zh/applications/retail-hospitality.html
-https://www.gongdaa.com/zh/about.html
-https://www.gongdaa.com/zh/contact.html
-```
+**顺序**：5 篇新文 → `certifications.html` → `blog.html` → buyers-guide。
 
 ---
 
-## 重要说明
+## ❌ 明确不需要请求索引的
 
-1. **Request Indexing ≠ 保证收录** — 它只是"请 Google 重新来抓一次"，Google 会按自己的算法决定是否收录。请求一次即可，**不要反复请求**，过度请求可能被降权。
-2. **配额** — GSC 每个站点每天有请求索引配额（通常 10-20 个）。如果某天提示超限，等第二天再继续，不要硬试。
-3. **更省力的替代** — 重新提交 `sitemap.xml`（见《Sitemap提交清单.md》第二步）后，Google 会自动发现并抓取全部 53 个 URL，效果一样甚至更好。手动请求索引只建议用于 🔴🟡 的高价值页面，🟢 页面完全可以只靠 sitemap。
-4. **结果检查** — 提交后 1-2 天，到 GSC → 效果 → 网页 里看收录数和点击量变化。
+- **26 个文件**（applications/ 6 + zh/applications/ 6 + blog/ 其余 15）：本轮只改了
+  JSON-LD 的 `inLanguage` / `wordCount` / `articleSection` 三个字段，**正文一字未动**。
+  schema 是抓取时顺带读的，不是排名信号，强行请求只白占配额。
+- `products.html`：上次改动 09-21，早已被处理。
+
+---
+
+## 📌 规则
+
+1. **Request Indexing ≠ 保证收录** — 一个 URL 请求一次即可，**不要反复请求**，过度请求可能被降权。
+2. **配额** — 每站点每天约 10–20 个（新站偏低）。批次 1 的 8 个刚好在额度内。超了等第二天。
+3. **验证是否已收录** — 请求后 1–3 天，URL Inspection 粘贴 URL 看状态；或搜
+   `site:gongdaa.com/具体路径`。
+4. **观察指标** — 一周后看 impressions。`sustainability-reach`（REACH/CBAM）对 EU 买家意图最强，重点看它的曝光。
+5. **网页索引编制报告**（38 未编入 / 17 已编入，更新于 09-21）— 点开 4 个原因各截一张图，
+   我逐个分类。薄内容页实测见 `索引诊断-2026-09-29.md`。
