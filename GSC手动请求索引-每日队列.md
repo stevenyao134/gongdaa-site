@@ -1,6 +1,6 @@
 # GSC 手动请求索引 · 队列
 
-> **更新：2026-10-11。** 本文件只保留当前有效动作，历史队列已删除。
+> **更新：2026-10-16。** 本文件只保留当前有效动作，历史队列已删除。
 
 ---
 
@@ -11,6 +11,28 @@
 
 单页索引请求走 **顶部搜索栏（网址检查）→ 请求编入索引**，不走站点地图框。
 一个 URL 请求一次即可，**不要反复请求**；每天约 10 个封顶，超了等第二天。
+
+---
+
+## 📅 批次 4 — 2026-10-16（4 个，优先做）
+
+这 4 页正文大幅补厚（91→422 词 / 159→579 字 / 253→535 字 / 204→585 字），
+需要 Google 重抓才能看到新内容。其余 63 页本轮只加了 og 图片元数据，
+属次要变更，**不必单独请求**，等自然重抓即可。
+
+```
+https://www.gongdaa.com/contact.html
+https://www.gongdaa.com/zh/contact.html
+https://www.gongdaa.com/zh/products.html
+https://www.gongdaa.com/zh/applications.html
+```
+
+| 页面 | 变更 |
+|---|---|
+| `contact.html` | 加「下单四步」+ 报价所需五项信息 |
+| `zh/contact.html` | 同上中文版 |
+| `zh/products.html` | 加中文产品 FAQ 5 问 + FAQPage 结构化数据 |
+| `zh/applications.html` | 展开导语 + 加「把膜材选对工况」实用指南 |
 
 ---
 
