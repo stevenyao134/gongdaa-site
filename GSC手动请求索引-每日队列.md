@@ -1,6 +1,6 @@
 # GSC 手动请求索引 · 队列
 
-> **更新：2026-10-16。** 本文件只保留当前有效动作，历史队列已删除。
+> **更新：2026-10-16（第二次）。** 本文件只保留当前有效动作，历史队列已删除。
 
 ---
 
@@ -14,11 +14,26 @@
 
 ---
 
+## ✅ 本轮（10-16 第二批）无需手动请求
+
+这一批改的是**结构与合规**，不改正文：标题层级（h3→h2）、表单 label 关联、
+73 处畸形标记、页头 logo 去掉 lazy、Product 补 category。Google 自然重抓即可，
+**不必占用每日额度**。若想加速，只挑下面这 5 个枢纽页：
+
+```
+https://www.gongdaa.com/
+https://www.gongdaa.com/products.html
+https://www.gongdaa.com/blog.html
+https://www.gongdaa.com/certifications.html
+https://www.gongdaa.com/contact.html
+```
+
+---
+
 ## 📅 批次 4 — 2026-10-16（4 个，优先做）
 
 这 4 页正文大幅补厚（91→422 词 / 159→579 字 / 253→535 字 / 204→585 字），
-需要 Google 重抓才能看到新内容。其余 63 页本轮只加了 og 图片元数据，
-属次要变更，**不必单独请求**，等自然重抓即可。
+需要 Google 重抓才能看到新内容。
 
 ```
 https://www.gongdaa.com/contact.html
@@ -41,7 +56,7 @@ https://www.gongdaa.com/zh/applications.html
 新增 5 篇行业博客（全新 URL，从未被抓取）+ `blog.html`（卡片 20→25）+
 `blog/shipping…`（卷重表修正）。新 5 篇词数 1068–1326。
 
-**今天做前 5 个 = 全新 URL，优先：**
+**先做前 5 个 = 全新 URL：**
 
 ```
 https://www.gongdaa.com/blog/pvc-vs-pet-vs-pp-decorative-film.html
@@ -51,7 +66,7 @@ https://www.gongdaa.com/blog/pvc-film-price-cost-breakdown.html
 https://www.gongdaa.com/blog/pvc-film-for-wall-panels-guide.html
 ```
 
-**明天做后 2 个：**
+**再做后 2 个：**
 
 ```
 https://www.gongdaa.com/blog.html
@@ -88,6 +103,6 @@ customizing（承诺统一）。已请求过的不要重复。
 1. **Request Indexing ≠ 保证收录**，Google 自行决定；过度请求可能被降权。
 2. **验证是否已收录** — 请求后 1–3 天，URL Inspection 粘贴 URL 看状态；或搜 `site:gongdaa.com/路径`。
 3. **网页索引编制报告** — 点开未编入索引的各原因截图给我分类。薄内容实测见
-   `索引诊断-2026-09-29.md`（10-07 已把 7 个 EN 薄页补厚，zh 侧未动）。
+   `索引诊断-2026-09-29.md`（EN 侧已全补齐，zh 侧 10-16 已完成）。
 4. **观察指标** — `sustainability-reach`（REACH/CBAM）对 EU 买家意图最强，重点看曝光；
-   本批 `pvc-film-price-cost-breakdown` 商业意图最强，值得盯。
+   `pvc-film-price-cost-breakdown` 商业意图最强，值得盯。
