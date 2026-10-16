@@ -107,6 +107,10 @@ a:hover { color: var(--gold-2); }
 .section-head p { color: var(--muted); font-size: 17px; margin: 0; }
 .section.dark .section-head p { color: #aab6c4; }
 
+
+/* 层级修正：语义提升为 h2，但视觉保持浏览器默认 h3 的字号/字重 */
+h2.heading-sm { font-size: 1.17em; font-weight: 700; }
+
 /* ---------- Cards / Grid ---------- */
 .grid { display: grid; gap: 24px; }
 .grid-3 { grid-template-columns: repeat(3,1fr); }
@@ -120,7 +124,7 @@ a:hover { color: var(--gold-2); }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(212,175,55,.4); }
 .card .thumb { height: 150px; border-radius: 10px; margin-bottom: 18px; background: var(--bg-3); box-shadow: inset 0 0 40px rgba(0,0,0,.35); overflow: hidden; }
 .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.card h3 { margin: 0 0 8px; font-size: 19px; color: var(--text); }
+.card h3, .card h2 { margin: 0 0 8px; font-size: 19px; color: var(--text); }
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
 .card .more { display: inline-block; margin-top: 14px; font-weight: 600; color: var(--gold); }
 
@@ -149,7 +153,7 @@ a:hover { color: var(--gold-2); }
 /* ---------- Footer ---------- */
 .site-footer { background: #080b0f; color: #8b97a6; padding: 56px 0 28px; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
-.site-footer h4 { color: var(--text); font-size: 16px; margin: 0 0 16px; }
+.site-footer h3, .site-footer h4 { color: var(--text); font-size: 16px; margin: 0 0 16px; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer ul li { margin-bottom: 10px; }
 .site-footer a { color: #8b97a6; }

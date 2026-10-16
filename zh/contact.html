@@ -65,7 +65,7 @@
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="logo" href="/zh/"><img src="/img/logo-light.webp" height="935" width="1266" alt="GONGDA" class="logo-img" / loading="lazy"></a>
+    <a class="logo" href="/zh/"><img src="/img/logo-light.webp" height="935" width="1266" alt="GONGDA" class="logo-img" /></a>
     <nav><ul class="nav-links">
       <li><a href="/zh/">首页</a></li><li><a href="/zh/products.html">产品</a></li>
       <li><a href="/zh/applications.html">应用</a></li><li><a href="/zh/about.html">关于我们</a></li>
@@ -86,29 +86,29 @@
     <div class="grid grid-2" style="gap:40px;align-items:start">
       <form class="card" id="inquiry-form">
         <div class="form-grid">
-          <div class="field"><label>姓名 *</label><input type="text" name="name" required /></div>
-          <div class="field"><label>公司 *</label><input type="text" name="company" required /></div>
-          <div class="field"><label>邮箱 *</label><input type="email" name="email" required /></div>
-          <div class="field"><label>WhatsApp / 电话</label><input type="text" name="phone" /></div>
-          <div class="field full"><label>产品意向</label>
-            <select name="product">
+          <div class="field"><label for="cf-name">姓名 *</label><input id="cf-name" type="text" name="name" autocomplete="name" required /></div>
+          <div class="field"><label for="cf-company">公司 *</label><input id="cf-company" type="text" name="company" autocomplete="organization" required /></div>
+          <div class="field"><label for="cf-email">邮箱 *</label><input id="cf-email" type="email" name="email" autocomplete="email" required /></div>
+          <div class="field"><label for="cf-phone">WhatsApp / 电话</label><input id="cf-phone" type="text" name="phone" autocomplete="tel" /></div>
+          <div class="field full"><label for="cf-product">产品意向</label>
+            <select id="cf-product" name="product">
               <option>装饰 PVC 膜</option>
               <option>PVC 封边条</option>
               <option>PVC 吸塑膜</option>
               <option>全部 / 不确定</option>
             </select>
           </div>
-          <div class="field full"><label>留言 *</label><textarea name="message" rows="5" required placeholder="请告知颜色、规格、数量、目标市场..."></textarea></div>
+          <div class="field full"><label for="cf-message">留言 *</label><textarea id="cf-message" name="message" rows="5" required placeholder="请告知颜色、规格、数量、目标市场..."></textarea></div>
           <div class="field full"><button class="btn btn-primary" type="submit">发送询盘</button></div>
         </div>
       </form>
       <div>
         <div class="card" style="margin-bottom:20px">
-          <h3 style="color:var(--text)">直接联系</h3>
+          <h2 style="color:var(--text)">直接联系</h2>
           <p style="color:var(--muted)">邮箱：steven@sundecor.cn<br/>WhatsApp：+86 13532762231<br/>微信：793561276</p>
         </div>
         <div class="card">
-          <h3 style="color:var(--text)">工厂</h3>
+          <h2 style="color:var(--text)">工厂</h2>
           <p style="color:var(--muted)">中国广东佛山<br/>欢迎实地考察与视频看厂。</p>
         </div>
       </div>
