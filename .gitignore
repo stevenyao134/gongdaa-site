@@ -38,3 +38,6 @@ img/*.png
 !img/og-certifications.jpg
 !img/og-faq.jpg
 !img/factory.webp
+!img/apple-touch-icon.png
+!img/icon-192.png
+!img/icon-512.png
