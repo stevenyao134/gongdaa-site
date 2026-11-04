@@ -1,6 +1,6 @@
 # GSC 手动请求索引 · 队列
 
-> **更新：2026-10-16（第二次）。** 本文件只保留当前有效动作，历史队列已删除。
+> **更新：2026-11-04。** 本文件只保留当前有效动作，历史队列已删除。
 
 ---
 
@@ -14,95 +14,61 @@
 
 ---
 
-## ✅ 本轮（10-16 第二批）无需手动请求
+## 📅 批次 5 — 2026-11-04（7 个，优先做）
 
-这一批改的是**结构与合规**，不改正文：标题层级（h3→h2）、表单 label 关联、
-73 处畸形标记、页头 logo 去掉 lazy、Product 补 category。Google 自然重抓即可，
-**不必占用每日额度**。若想加速，只挑下面这 5 个枢纽页：
+这一批修的是**会被 Google 直接判负的信号**，重抓价值最高：
+
+1. **16 个中文页原本各有 5 个重复的 canonical 标签** → 已去重为 1 个。
+   canonical 重复时 Google 会直接忽略该信号，等于这 16 页的规范化声明一直是失效的。
+2. **faq.html / products.html 的 FAQPage 结构化数据与页面可见文本不一致**
+   （JSON 是简写版，页面上是完整版）→ 已按可见文本重建，48 条问答 100% 一致。
+   重抓后才有机会拿到 FAQ 富摘要。
+
+今天先做这 7 个（覆盖 FAQ 与中文站的主要入口）：
 
 ```
-https://www.gongdaa.com/
+https://www.gongdaa.com/faq.html
 https://www.gongdaa.com/products.html
-https://www.gongdaa.com/blog.html
-https://www.gongdaa.com/certifications.html
-https://www.gongdaa.com/contact.html
-```
-
----
-
-## 📅 批次 4 — 2026-10-16（4 个，优先做）
-
-这 4 页正文大幅补厚（91→422 词 / 159→579 字 / 253→535 字 / 204→585 字），
-需要 Google 重抓才能看到新内容。
-
-```
-https://www.gongdaa.com/contact.html
-https://www.gongdaa.com/zh/contact.html
+https://www.gongdaa.com/zh/
 https://www.gongdaa.com/zh/products.html
+https://www.gongdaa.com/zh/faq.html
+https://www.gongdaa.com/zh/contact.html
 https://www.gongdaa.com/zh/applications.html
 ```
 
-| 页面 | 变更 |
-|---|---|
-| `contact.html` | 加「下单四步」+ 报价所需五项信息 |
-| `zh/contact.html` | 同上中文版 |
-| `zh/products.html` | 加中文产品 FAQ 5 问 + FAQPage 结构化数据 |
-| `zh/applications.html` | 展开导语 + 加「把膜材选对工况」实用指南 |
+**明天（配额恢复后）再做剩余 12 个中文页**（canonical 同样已修，只是不急着抓）：
+
+```
+https://www.gongdaa.com/zh/about.html
+https://www.gongdaa.com/zh/certifications.html
+https://www.gongdaa.com/zh/products/decorative-pvc-film.html
+https://www.gongdaa.com/zh/products/wood-grain-pvc-film.html
+https://www.gongdaa.com/zh/products/marble-metallic-pvc-film.html
+https://www.gongdaa.com/zh/products/soft-touch-matt-pvc-film.html
+https://www.gongdaa.com/zh/products/pvc-edge-banding.html
+https://www.gongdaa.com/zh/products/pvc-membrane-foil.html
+https://www.gongdaa.com/zh/products/pvc-self-adhesive-film.html
+https://www.gongdaa.com/zh/applications/kitchen-cabinets.html
+https://www.gongdaa.com/zh/applications/wardrobes-closets.html
+https://www.gongdaa.com/zh/applications/doors-panels.html
+```
 
 ---
 
-## 📅 批次 3 — 2026-10-11（7 个）
+## ✅ 无需手动请求（自然重抓即可）
 
-新增 5 篇行业博客（全新 URL，从未被抓取）+ `blog.html`（卡片 20→25）+
-`blog/shipping…`（卷重表修正）。新 5 篇词数 1068–1326。
-
-**先做前 5 个 = 全新 URL：**
-
-```
-https://www.gongdaa.com/blog/pvc-vs-pet-vs-pp-decorative-film.html
-https://www.gongdaa.com/blog/pvc-film-thickness-selection-guide.html
-https://www.gongdaa.com/blog/pvc-edge-banding-adhesive-guide.html
-https://www.gongdaa.com/blog/pvc-film-price-cost-breakdown.html
-https://www.gongdaa.com/blog/pvc-film-for-wall-panels-guide.html
-```
-
-**再做后 2 个：**
-
-```
-https://www.gongdaa.com/blog.html
-https://www.gongdaa.com/blog/shipping-pvc-film-from-china-moq-incoterms.html
-```
-
-| 页面 | 选题 | 词数 |
-|---|---|---|
-| `pvc-vs-pet-vs-pp-decorative-film` | 基材对比（PVC/PET/PP） | 1079 |
-| `pvc-film-thickness-selection-guide` | 装饰膜 0.12–0.45mm 厚度选型 | 1088 |
-| `pvc-edge-banding-adhesive-guide` | 封边条 EVA/PUR/热风胶种与设备设定 | 1092 |
-| `pvc-film-price-cost-breakdown` | 报价五块成本构成 | 1326 |
-| `pvc-film-for-wall-panels-guide` | 墙板基材/规格/安装 | 1142 |
-| `blog.html` | 卡片 20 → 25 | — |
-| `blog/shipping…` | 卷重表修正（64kg 而非 4-6kg） | — |
+- **批次 4（10-16 补厚的 4 页）**：contact / zh/contact / zh/products / zh/applications
+  —— 已在批次 5 里覆盖其中 3 个中文页；contact.html 若还没做，可与批次 5 一起提交。
+- **53 个英文页**：本轮只改了 `th scope`、`apple-touch-icon`、`mask-icon` 移除、`dateModified`，
+  不涉及正文，让 Google 自然重抓即可。
 
 ---
 
-## 📅 批次 2 — 2026-10-07（12 个，做完就不用管）
+## 📌 待观察（下一轮复查时看）
 
-applications + 5 个产品页（补厚）+ certifications/faq/products/zh×2（h1 对齐）+
-customizing（承诺统一）。已请求过的不要重复。
-
----
-
-## 📅 批次 1 — 09-29 的 8 个（做完就不用管）
-
-5 篇新博客 + `certifications.html` + `blog.html` + buyers-guide。已请求过的不要重复。
-
----
-
-## 📌 规则
-
-1. **Request Indexing ≠ 保证收录**，Google 自行决定；过度请求可能被降权。
-2. **验证是否已收录** — 请求后 1–3 天，URL Inspection 粘贴 URL 看状态；或搜 `site:gongdaa.com/路径`。
-3. **网页索引编制报告** — 点开未编入索引的各原因截图给我分类。薄内容实测见
-   `索引诊断-2026-09-29.md`（EN 侧已全补齐，zh 侧 10-16 已完成）。
-4. **观察指标** — `sustainability-reach`（REACH/CBAM）对 EU 买家意图最强，重点看曝光；
-   `pvc-film-price-cost-breakdown` 商业意图最强，值得盯。
+- **FAQ 富摘要**：faq.html 与 products.html 的 FAQ 数据现在与可见文本严格一致，
+  抓取后 2–4 周内应能在 GSC「增强功能 → 常见问题」里看到有效条目。
+- **中文站规范化**：16 页 canonical 从 5 个降到 1 个后，观察 GSC 里中文页的
+  「重复网页，Google 选择的规范网页与用户指定的不同」是否消失。
+- **SGS 报告 PDF**：已换成带水印的图片化低清版（不可提取文字）。文件仍在
+  `/files/sgs-test-report-2024.pdf`，若日后希望彻底不被访问，需要移出站点目录或加登录保护。
