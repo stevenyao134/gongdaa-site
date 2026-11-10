@@ -72,3 +72,21 @@ https://www.gongdaa.com/zh/applications/doors-panels.html
   「重复网页，Google 选择的规范网页与用户指定的不同」是否消失。
 - **SGS 报告 PDF**：已换成带水印的图片化低清版（不可提取文字）。文件仍在
   `/files/sgs-test-report-2024.pdf`，若日后希望彻底不被访问，需要移出站点目录或加登录保护。
+
+
+---
+
+## 🆕 批次 6（2026-11-10：新增 5 篇博客，优先做）
+
+5 篇新文已上线（commit 0a42d4b），sitemap 已含。每天 2 个，顺序如下：
+
+| # | URL | 说明 |
+|---|---|---|
+| 1 | /blog/pvc-self-adhesive-film-application-guide.html | 自粘膜应用指南（补自粘膜内容缺口） |
+| 2 | /blog/marble-metallic-pvc-film-guide.html | 大理石金属膜买家指南 |
+| 3 | /blog/pvc-membrane-foil-thermofoil-guide.html | 吸塑膜/thermofoil 门板指南 |
+| 4 | /blog/pvc-film-fire-safety-ratings-guide.html | 防火等级科普（EN 13501-1 / ASTM E84） |
+| 5 | /blog/pvc-film-surface-finishes-explained.html | 表面处理工艺全解 |
+| 6 | /blog.html | 卡片列表更新到 30 篇，顺带重抓 |
+
+**注意**：批次 5 的 7 个 URL 若还没做完，先做完批次 5 再开批次 6。
