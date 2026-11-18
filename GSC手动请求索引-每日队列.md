@@ -113,3 +113,31 @@ https://www.gongdaa.com/zh/applications/doors-panels.html
 | 11 | /blog.html | 卡片列表更新到 40 篇，顺带重抓 |
 
 **注意**：批次 5、6 若还没做完，先做完再开批次 7。
+
+
+---
+
+## 🆕 批次 8（2026-11-18：中文博客上线，优先做）
+
+zh/blog.html + 15 篇中文文章已上线（commit 2e51a15），sitemap 97 URL。每天 2 个，顺序如下：
+
+| # | URL | 说明 |
+|---|---|---|
+| 1 | /zh/blog.html | 中文博客枢纽页 |
+| 2 | /zh/blog/laser-edge-banding-zero-joint-guide.html | 激光封边 vs 热熔封边 |
+| 3 | /zh/blog/how-pvc-edge-banding-is-made.html | 封边条生产工艺 |
+| 4 | /zh/blog/pvc-film-for-office-furniture.html | 办公家具应用 |
+| 5 | /zh/blog/pvc-film-for-wardrobes-guide.html | 衣柜应用 |
+| 6 | /zh/blog/pvc-film-for-retail-hospitality.html | 零售酒店应用 |
+| 7 | /zh/blog/pvc-film-quality-testing-checklist.html | 到货质检清单 |
+| 8 | /zh/blog/pvc-film-lamination-defects-guide.html | 平贴缺陷排查 |
+| 9 | /zh/blog/pvc-film-rfq-quote-guide.html | RFQ 询价指南 |
+| 10 | /zh/blog/pvc-film-storage-shelf-life-guide.html | 仓储保管指南 |
+| 11 | /zh/blog/pvc-film-for-doors-panels-guide.html | 门板应用 |
+| 12 | /zh/blog/pvc-self-adhesive-film-application-guide.html | 自粘膜指南 |
+| 13 | /zh/blog/marble-metallic-pvc-film-guide.html | 大理石金属膜指南 |
+| 14 | /zh/blog/pvc-membrane-foil-thermofoil-guide.html | 吸塑膜指南 |
+| 15 | /zh/blog/pvc-film-fire-safety-ratings-guide.html | 防火等级指南 |
+| 16 | /zh/blog/pvc-film-surface-finishes-explained.html | 表面处理全解 |
+
+**注意**：批次 5、6、7 若还没做完，先做完再开批次 8。中文页收录较慢，前两周每天坚持提 2 个。
