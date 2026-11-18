@@ -90,3 +90,26 @@ https://www.gongdaa.com/zh/applications/doors-panels.html
 | 6 | /blog.html | 卡片列表更新到 30 篇，顺带重抓 |
 
 **注意**：批次 5 的 7 个 URL 若还没做完，先做完批次 5 再开批次 6。
+
+
+---
+
+## 🆕 批次 7（2026-11-18：新增 10 篇博客，优先做）
+
+10 篇新文已上线（commit f8957f3），sitemap 已含。每天 2 个，顺序如下：
+
+| # | URL | 说明 |
+|---|---|---|
+| 1 | /blog/laser-edge-banding-zero-joint-guide.html | 激光封边/零接缝指南 |
+| 2 | /blog/how-pvc-edge-banding-is-made.html | 封边条生产工艺全解 |
+| 3 | /blog/pvc-film-for-office-furniture.html | 办公家具应用 |
+| 4 | /blog/pvc-film-for-wardrobes-guide.html | 衣柜/收纳应用 |
+| 5 | /blog/pvc-film-for-retail-hospitality.html | 零售/酒店应用 |
+| 6 | /blog/pvc-film-quality-testing-checklist.html | 质检验收清单 |
+| 7 | /blog/pvc-film-lamination-defects-guide.html | 层压缺陷排查 |
+| 8 | /blog/pvc-film-rfq-quote-guide.html | RFQ 询价写法 |
+| 9 | /blog/pvc-film-storage-shelf-life-guide.html | 仓储保管指南 |
+| 10 | /blog/pvc-film-for-doors-panels-guide.html | 门板/门皮应用 |
+| 11 | /blog.html | 卡片列表更新到 40 篇，顺带重抓 |
+
+**注意**：批次 5、6 若还没做完，先做完再开批次 7。
